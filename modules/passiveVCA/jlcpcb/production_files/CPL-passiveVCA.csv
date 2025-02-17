@@ -1,0 +1,8 @@
+Designator,Val,Package,Mid X,Mid Y,Rotation,Layer
+C1,100nF,C_0402_1005Metric,99.29,-86.36,0.0,top
+Q1,BC549,TO-92_Inline,118.11,-86.36,0.0,top
+R1,1K,R_0402_1005Metric,98.3,-84.455,0.0,top
+R2,100K,R_0402_1005Metric,112.52,-85.09,0.0,top
+U1,AUDIOin,AUDIO-TH_PJ-313B,95.2501,-78.74,0.0,top
+U2,CVin,AUDIO-TH_PJ-313B,106.5,-80.25,-90.0,top
+U3,Out,AUDIO-TH_PJ-313B,118.11,-78.74,180.0,top
