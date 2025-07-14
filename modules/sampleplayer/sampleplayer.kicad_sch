@@ -200,6 +200,170 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:R_Potentiometer"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "RV"
+				(at -4.445 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R_Potentiometer"
+				(at -2.54 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Potentiometer"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "resistor variable"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Potentiometer*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_Potentiometer_0_1"
+				(rectangle
+					(start 1.016 2.54)
+					(end -1.016 -2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.143 0) (xy 2.286 0.508) (xy 2.286 -0.508) (xy 1.143 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 0) (xy 1.524 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_Potentiometer_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 1.27)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "ESP32boards:ESP-WROOM-32_30pinboard"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -1313,6 +1477,219 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector_Audio:AudioJack2_SwitchT")
+		(at 62.23 93.98 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "13704eb0-b50a-4ce1-b546-fd602d96f215")
+		(property "Reference" "J2"
+			(at 61.595 85.344 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Trigger2"
+			(at 61.595 87.884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "AudioJacks:Jack_3.5mm_QingPu_WQP-PJ301M-12_Vertical"
+			(at 62.23 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 62.23 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Audio Jack, 2 Poles (Mono / TS), Switched T Pole (Normalling)"
+			(at 62.23 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "TN"
+			(uuid "a818d459-440a-45fe-902b-472435a5151e")
+		)
+		(pin "S"
+			(uuid "946eca67-9735-40b0-9638-19403738b5f4")
+		)
+		(pin "T"
+			(uuid "d14fea26-222c-4604-a437-13d3b8a24e9d")
+		)
+		(instances
+			(project "sampleplayer"
+				(path "/2d0dec4d-3691-48a8-b187-4a2a379b89c1"
+					(reference "J2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Audio:AudioJack2_SwitchT")
+		(at 62.23 125.73 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3890237c-fea3-4762-92cf-8964e3b1e5b9")
+		(property "Reference" "J4"
+			(at 61.595 117.094 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Trigger4"
+			(at 61.595 119.634 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "AudioJacks:Jack_3.5mm_QingPu_WQP-PJ301M-12_Vertical"
+			(at 62.23 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 62.23 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Audio Jack, 2 Poles (Mono / TS), Switched T Pole (Normalling)"
+			(at 62.23 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "TN"
+			(uuid "5de2a301-f759-4a25-b460-35bc253d9282")
+		)
+		(pin "S"
+			(uuid "108f2fed-d3a1-4489-af52-6c4c851cebaa")
+		)
+		(pin "T"
+			(uuid "00e986e2-0528-44cb-89f9-2704a7f59c3e")
+		)
+		(instances
+			(project "sampleplayer"
+				(path "/2d0dec4d-3691-48a8-b187-4a2a379b89c1"
+					(reference "J4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Audio:AudioJack2_SwitchT")
+		(at 62.23 110.49 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "45c02c7d-289d-4627-813e-47dbc79fdbe0")
+		(property "Reference" "J3"
+			(at 61.595 101.854 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Trigger3"
+			(at 61.595 104.394 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "AudioJacks:Jack_3.5mm_QingPu_WQP-PJ301M-12_Vertical"
+			(at 62.23 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 62.23 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Audio Jack, 2 Poles (Mono / TS), Switched T Pole (Normalling)"
+			(at 62.23 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "TN"
+			(uuid "381ec157-69a4-4728-9412-8c908ac2b698")
+		)
+		(pin "S"
+			(uuid "50912f18-42d6-4cb5-9ce3-3040ba4832c0")
+		)
+		(pin "T"
+			(uuid "3b31d548-cb30-49bc-90f2-d39e352d4011")
+		)
+		(instances
+			(project "sampleplayer"
+				(path "/2d0dec4d-3691-48a8-b187-4a2a379b89c1"
+					(reference "J3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "ESP32boards:ESP32-DEVKIT-V1")
 		(at 134.874 91.186 0)
 		(unit 1)
@@ -1587,7 +1964,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Audio:AudioJack2_SwitchT")
-		(at 77.724 103.886 0)
+		(at 62.23 78.74 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1596,15 +1973,15 @@
 		(fields_autoplaced yes)
 		(uuid "840f5864-cca6-4ed1-977f-c7c60ac05ea2")
 		(property "Reference" "J1"
-			(at 77.089 95.25 0)
+			(at 61.595 70.104 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "AudioJack2_SwitchT"
-			(at 77.089 97.79 0)
+		(property "Value" "Trigger1"
+			(at 61.595 72.644 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1612,7 +1989,7 @@
 			)
 		)
 		(property "Footprint" "AudioJacks:Jack_3.5mm_QingPu_WQP-PJ301M-12_Vertical"
-			(at 77.724 103.886 0)
+			(at 62.23 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1621,7 +1998,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 77.724 103.886 0)
+			(at 62.23 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1630,7 +2007,7 @@
 			)
 		)
 		(property "Description" "Audio Jack, 2 Poles (Mono / TS), Switched T Pole (Normalling)"
-			(at 77.724 103.886 0)
+			(at 62.23 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1658,7 +2035,7 @@
 	)
 	(symbol
 		(lib_id "breakoutboards:PCM5102_i2s")
-		(at 83.312 76.962 0)
+		(at 139.7 38.1 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1667,7 +2044,7 @@
 		(fields_autoplaced yes)
 		(uuid "aa05b9d8-51dc-4679-9fef-f5c4314b1bbc")
 		(property "Reference" "U2"
-			(at 82.169 63.5 0)
+			(at 138.557 24.638 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1675,7 +2052,7 @@
 			)
 		)
 		(property "Value" "~"
-			(at 82.169 64.77 0)
+			(at 138.557 25.908 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1683,7 +2060,7 @@
 			)
 		)
 		(property "Footprint" "breakoutboards:PCM5102"
-			(at 83.312 76.962 0)
+			(at 139.7 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1692,7 +2069,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 83.312 76.962 0)
+			(at 139.7 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1701,7 +2078,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 83.312 76.962 0)
+			(at 139.7 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1823,6 +2200,77 @@
 			(project ""
 				(path "/2d0dec4d-3691-48a8-b187-4a2a379b89c1"
 					(reference "ESP32DEV1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Potentiometer")
+		(at 63.5 149.86 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ec139464-e08c-4147-8dfa-2cee2f79bcfb")
+		(property "Reference" "RV1"
+			(at 63.5 153.67 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "R_Potentiometer"
+			(at 63.5 156.21 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 63.5 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 63.5 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Potentiometer"
+			(at 63.5 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "e11948b4-fd96-4232-a382-f7756e9d1e4f")
+		)
+		(pin "3"
+			(uuid "c00c1cbc-47b7-41b0-b069-697051068aa3")
+		)
+		(pin "1"
+			(uuid "f0ec4c60-dd87-4c82-9746-e0dc45fd844f")
+		)
+		(instances
+			(project ""
+				(path "/2d0dec4d-3691-48a8-b187-4a2a379b89c1"
+					(reference "RV1")
 					(unit 1)
 				)
 			)
